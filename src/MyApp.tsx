@@ -1,54 +1,81 @@
 import React from 'react';
-import { StyleSheet, Text, View , ImageBackground, Button, TextInput} from 'react-native';
+import { StyleSheet, Text, View, ImageBackground, Button, TextInput, TouchableOpacity } from 'react-native';
 import Header from "../src/components/Header";
 
+import { stylesIni } from './styles/styleIni';
 const MyApp = () => {
+  const EsqueceuConta = () => {
+
+  };
+
+  const CriarConta = () =>{
+
+  };
+
+  const Login = () => {
+
+  }
+  
   return (
-    
+
     <ImageBackground
-    source={require("../src/assets/2.jpg")}
-    style={styles.imageBackground}    
-    
+      source={require("../src/assets/Background.jpg")}
+      style={stylesIni.imageBackground}
+
     >
-      <View style={styles.container}>
+
+      <View style={stylesIni.container}>
         <Header />
-        <TextInput 
-          style={styles.input}
+
+        <Text style={stylesIni.textBemVindo}>
+          Bem Vindo
+        </Text>
+
+        <Text style={stylesIni.textToThe}>
+          To the future of transportation
+        </Text>
+
+        <TextInput
+          style={stylesIni.input}
           placeholder="E-mail"
         />
-        <TextInput 
-          style={styles.input}
+
+        <TextInput
+          style={stylesIni.input}
           placeholder="Senha"
           secureTextEntry={true}
         />
 
+        <View style={stylesIni.buttonRow}>
+            <View style={stylesIni.leftSection}>
+              <TouchableOpacity onPress={EsqueceuConta}>
+                <Text style={stylesIni.linkText}>
+                Esqueceu a conta?
+                </Text>
+              </TouchableOpacity >
+              <TouchableOpacity onPress={CriarConta}>
+              <Text style={stylesIni.linkText}>
+                Criar Conta?
+              </Text>
+              </TouchableOpacity>
+            </View>
+            <View style={stylesIni.rightSection}>
+              <TouchableOpacity style={stylesIni.button} onPress={Login}>
+                <Text style={stylesIni.buttonText}> 
+                  Login
+                </Text>
+              </TouchableOpacity>
+            </View>
+        </View>
+
+
       </View>
+
     </ImageBackground>
-    
-    );
+
+  );
 }
 
-const styles = StyleSheet.create({
-  imageBackground: {
-    width: "100%",
-    height: "100%",
-    justifyContent: "center",
-    alignItems: "center"
-  },
-  text: {
-    color: "#090F13",
-    fontSize: 45,
-    textAlign: "justify",
-  },
-  container: {
-    width: "80%"
-  },
-  input: {
-    backgroundColor: 'rgba(255, 255, 255, 0.8)',
-    marginBottom: 20,
-    borderRadius: 5,
-    paddingLeft: 10,
-  }
-});
+
 
 export default MyApp;

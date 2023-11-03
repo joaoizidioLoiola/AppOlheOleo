@@ -1,0 +1,13 @@
+
+.header {
+    position: "relative";
+    left: 0;
+    bottom: 120;
+}
+
+.logo {
+    width: 180;
+    height: 60;
+    background-color: #F1EFEF;
+    border-radius: 2;
+}
