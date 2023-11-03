@@ -3,13 +3,16 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   header: {
     position: "relative",
-    left: 0,
-    bottom: 120,
+    bottom: 135,
+    alignItems: "flex-start",
+    padding: 0,
+    paddingEnd: 20
   },
   logo: {
-    width: 180,
-    height: 60,
-    ///backgroundColor: '#F1EFEF',
-    borderRadius: 2
+    width: 245,
+    height: 80,
+    //backgroundColor: '#F1EFEF',
+    alignItems:"flex-start",
+    
   },
 });
