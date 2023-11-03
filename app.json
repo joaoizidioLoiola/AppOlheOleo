@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "AppOlheOleo",
+    "slug": "AppOlheOleo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
