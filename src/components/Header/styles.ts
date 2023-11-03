@@ -1,16 +1,15 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    header:{
-        flexDirection:'row',
-        justifyContent:"flex-start",
-        alignItems:'center',
-        marginTop: 20,
-        marginLeft: 10
-    },
-    logo: {
-        width: 150,
-        height: 50,
-        backgroundColor: 'tomato'
-    },
+  header: {
+    position: "relative",
+    left: 0,
+    bottom: 120,
+  },
+  logo: {
+    width: 180,
+    height: 60,
+    ///backgroundColor: '#F1EFEF',
+    borderRadius: 2
+  },
 });

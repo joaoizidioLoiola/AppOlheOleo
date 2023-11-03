@@ -1,22 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View , ImageBackground, Button, TextInput} from 'react-native';
+import { StyleSheet, Text, View, ImageBackground, Button, TextInput } from 'react-native';
 import Header from "../src/components/Header";
 
 const MyApp = () => {
   return (
-    
+
     <ImageBackground
-    source={require("../src/assets/2.jpg")}
-    style={styles.imageBackground}    
-    
+      source={require("../src/assets/4.jpg")}
+      style={styles.imageBackground}
+
     >
       <View style={styles.container}>
         <Header />
-        <TextInput 
+        <TextInput
           style={styles.input}
           placeholder="E-mail"
         />
-        <TextInput 
+        <TextInput
           style={styles.input}
           placeholder="Senha"
           secureTextEntry={true}
@@ -24,8 +24,8 @@ const MyApp = () => {
 
       </View>
     </ImageBackground>
-    
-    );
+
+  );
 }
 
 const styles = StyleSheet.create({
@@ -45,10 +45,14 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    fontSize: 14,
+    width: 250,
+    height:45,
     marginBottom: 20,
     borderRadius: 5,
     paddingLeft: 10,
-  }
+
+  },
 });
 
 export default MyApp;
