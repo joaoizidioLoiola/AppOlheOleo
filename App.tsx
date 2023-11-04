@@ -1,4 +1,4 @@
-import MyApp from "./src/MyApp";
+import MyApp from "./src/screens/Login/MyApp";
 
 export default function App(){
 return(
